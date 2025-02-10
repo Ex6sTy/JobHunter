@@ -16,7 +16,7 @@ class APIConnector(ABC):
 
 
 class HeadHunterAPI(APIConnector):
-    BASE_URL = "https://api.hh.ru"
+    BASE_URL = "https://api.hh.ru/vacancies"
 
     def connect(self) -> None:
         """ Реализация подключения (если потребуется аутентификация). """
@@ -28,14 +28,20 @@ class HeadHunterAPI(APIConnector):
         response.raise_for_status()
         return response.json()
 
-    def get_vacancies(self, search_text: str) -> list[Vacancy]:
-        vacancies_data = self.get_data("vacancies", {"text": search_text}).get("items", [])
-        return vacancies_data
+    def get_vacancies(self, search_text: str):
+        params = {
+            "text": search_text,
+            "area": "1",
+            "per_page": 20
+        }
+        print(f"DEBUG: Отправляем запрос в API с параметрами: {params}")
 
+        response = requests.get(f"{self.BASE_URL}", params=params)
 
-api = HeadHunterAPI()
-vacancies = api.get_vacancies("FDM")
-print(vacancies)
+        if response.status_code != 200:
+            print(f"Ошибка API: {response.status_code}, {response.text}")
+            return []
 
-
-
+        data = response.json()
+        print(f"DEBUG: Получено {len(data.get('items', []))} вакансий")
+        return data.get("items", [])
