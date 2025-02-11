@@ -15,6 +15,11 @@ class JSONSaver:
                       f, ensure_ascii=False, indent=4)
 
     @staticmethod
+    def has_saved_vacancies():
+        """ Проверяет, есть ли сохраненные вакансии. """
+        return os.path.exists(JSONSaver.FILE_PATH) and os.path.getsize(JSONSaver.FILE_PATH) > 0
+
+    @staticmethod
     def load_vacancies() -> list[Vacancy]:
         """ Загружает вакансии из JSON-файла """
         try:

@@ -60,20 +60,20 @@ class Vacancy:
 
     @staticmethod
     def filter_by_salary(vacancies, min_salary):
-        """Фильтрует вакансии по минимальной зарплате"""
-        filtered_vacancies = []
+        """Фильтрует вакансии по минимальному уровню зарплаты."""
+        filtered = []
         for vacancy in vacancies:
-            # Если vacancy – это словарь, преобразуем его в объект Vacancy
-            if isinstance(vacancy, dict):
-                vacancy = Vacancy.from_api_response(vacancy)
+            salary = vacancy.salary if isinstance(vacancy, Vacancy) else vacancy.get("salary", {})
+            salary_from = salary.get("from")
+            salary_to = salary.get("to")
 
-            # Проверяем, есть ли информация о зарплате
-            if vacancy.salary and vacancy.salary.get("from"):
-                salary_from = vacancy.salary["from"]
-                if salary_from and salary_from >= min_salary:
-                    filtered_vacancies.append(vacancy)
+            # Корректное условие: либо salary_from >= min_salary, либо salary_to существует и не противоречит логике
+            if salary_from is not None and salary_from >= min_salary:
+                filtered.append(vacancy)
+            elif salary_from is None and salary_to is not None and salary_to >= min_salary:
+                filtered.append(vacancy)
 
-        return filtered_vacancies
+        return filtered
 
     @staticmethod
     def sort_by_date(vacancies, reverse=True):
