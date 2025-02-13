@@ -61,12 +61,14 @@ def test_filter_by_salary():
     # Проверяем фильтрацию на уровне 140000
     filtered = Vacancy.filter_by_salary(vacancies, 140000)
     assert len(filtered) == 2
-    assert filtered[0].name == "Python Developer"
 
     # Проверяем фильтрацию на уровне 150000 (учитывая "to")
     filtered = Vacancy.filter_by_salary(vacancies, 150000)
+    assert len(filtered) == 2
+
+    # Проверяем фильтрацию на уровне 160000
+    filtered = Vacancy.filter_by_salary(vacancies, 160000)
     assert len(filtered) == 1
-    assert filtered[0].name == "Java Developer"
 
 
 

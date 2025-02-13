@@ -30,7 +30,7 @@ def main():
     if filter_choice == "да":
         min_salary = input("Введите минимальную зарплату (оставьте пустым, чтобы пропустить): ").strip()
         if min_salary.isdigit():
-            vacancies = Vacancy.filter_by_salary(vacancies, int(min_salary))
+            vacancies = Vacancy.filter_by_salary(vacancies, min_salary)
 
         city = input("Введите город (оставьте пустым, чтобы пропустить): ").strip()
         if city:

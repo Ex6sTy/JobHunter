@@ -60,18 +60,18 @@ class Vacancy:
         return sorted(vacancies, key=lambda v: v.get_salary() if isinstance(v, Vacancy) else 0, reverse=reverse)
 
     @classmethod
-    def filter_by_salary(vacancies, min_salary):
+    def filter_by_salary(cls, vacancies, min_salary):
         """Фильтрует вакансии по минимальному уровню зарплаты."""
+        min_salary = int(min_salary)  # Приводим строку к int
         filtered = []
         for vacancy in vacancies:
-            salary = vacancy.salary if isinstance(vacancy, Vacancy) else vacancy.get("salary", None)
-            if salary:  # Добавили проверку
+            salary = vacancy.salary if isinstance(vacancy, Vacancy) else vacancy.get("salary", {})
+            if salary:
                 salary_from = salary.get("from")
                 salary_to = salary.get("to")
-
-                if salary_from is not None and salary_from >= min_salary:
+                if salary_from and isinstance(salary_from, int) and salary_from >= min_salary:
                     filtered.append(vacancy)
-                elif salary_from is None and salary_to is not None and salary_to >= min_salary:
+                elif salary_to and isinstance(salary_to, int) and salary_to >= min_salary:
                     filtered.append(vacancy)
         return filtered
 
