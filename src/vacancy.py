@@ -54,25 +54,25 @@ class Vacancy:
             return self.salary.get("to") or self.salary.get("from") or 0
         return 0
 
-    def sort_by_salary(vacancies, reverse=True):
-        """ Сортирует вакансии по зарплате """
-        return sorted(vacancies, key=lambda v: v.get_salary(), reverse=reverse)
-
     @staticmethod
+    def sort_by_salary(vacancies, reverse=True):
+        """Сортирует вакансии по зарплате."""
+        return sorted(vacancies, key=lambda v: v.get_salary() if isinstance(v, Vacancy) else 0, reverse=reverse)
+
+    @classmethod
     def filter_by_salary(vacancies, min_salary):
         """Фильтрует вакансии по минимальному уровню зарплаты."""
         filtered = []
         for vacancy in vacancies:
-            salary = vacancy.salary if isinstance(vacancy, Vacancy) else vacancy.get("salary", {})
-            salary_from = salary.get("from")
-            salary_to = salary.get("to")
+            salary = vacancy.salary if isinstance(vacancy, Vacancy) else vacancy.get("salary", None)
+            if salary:  # Добавили проверку
+                salary_from = salary.get("from")
+                salary_to = salary.get("to")
 
-            # Корректное условие: либо salary_from >= min_salary, либо salary_to существует и не противоречит логике
-            if salary_from is not None and salary_from >= min_salary:
-                filtered.append(vacancy)
-            elif salary_from is None and salary_to is not None and salary_to >= min_salary:
-                filtered.append(vacancy)
-
+                if salary_from is not None and salary_from >= min_salary:
+                    filtered.append(vacancy)
+                elif salary_from is None and salary_to is not None and salary_to >= min_salary:
+                    filtered.append(vacancy)
         return filtered
 
     @staticmethod
