@@ -1,0 +1,277 @@
+[
+    {
+        "id": "117209184",
+        "name": "QA engineer (manual)",
+        "salary": {
+            "from": null,
+            "to": 150000,
+            "currency": "RUR",
+            "gross": false
+        },
+        "area": "Москва",
+        "published_at": "2025-02-13T12:55:33+0300",
+        "url": "https://api.hh.ru/vacancies/117209184?host=hh.ru",
+        "employer": "АТМОсфера",
+        "experience": "От 1 года до 3 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117225826",
+        "name": "QA тестировщик (Manual)",
+        "salary": {
+            "from": 140000,
+            "to": 240000,
+            "currency": "RUR",
+            "gross": true
+        },
+        "area": "Москва",
+        "published_at": "2025-02-13T16:20:09+0300",
+        "url": "https://api.hh.ru/vacancies/117225826?host=hh.ru",
+        "employer": "DCloud",
+        "experience": "От 3 до 6 лет",
+        "schedule": "Удаленная работа"
+    },
+    {
+        "id": "117187276",
+        "name": "Frontend-разработчик в команду Облака",
+        "salary": null,
+        "area": "Москва",
+        "published_at": "2025-02-13T09:54:04+0300",
+        "url": "https://api.hh.ru/vacancies/117187276?host=hh.ru",
+        "employer": "КРОК",
+        "experience": "От 3 до 6 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "115375703",
+        "name": "Руководитель команды разработки Python",
+        "salary": null,
+        "area": "Москва",
+        "published_at": "2025-01-15T13:03:50+0300",
+        "url": "https://api.hh.ru/vacancies/115375703?host=hh.ru",
+        "employer": "Эйлер Аналитические Технологии",
+        "experience": "Более 6 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117172257",
+        "name": "Junior - разработчик",
+        "salary": {
+            "from": 70000,
+            "to": null,
+            "currency": "RUR",
+            "gross": false
+        },
+        "area": "Москва",
+        "published_at": "2025-02-12T19:32:08+0300",
+        "url": "https://api.hh.ru/vacancies/117172257?host=hh.ru",
+        "employer": "Media 108",
+        "experience": "От 1 года до 3 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117191124",
+        "name": "Аналитик SQL",
+        "salary": null,
+        "area": "Москва",
+        "published_at": "2025-02-13T10:33:09+0300",
+        "url": "https://api.hh.ru/vacancies/117191124?host=hh.ru",
+        "employer": "Институт Человека РОМИР",
+        "experience": "Нет опыта",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117161804",
+        "name": "Тестировщик / QA инженер",
+        "salary": {
+            "from": null,
+            "to": 214000,
+            "currency": "RUR",
+            "gross": false
+        },
+        "area": "Москва",
+        "published_at": "2025-02-12T17:44:08+0300",
+        "url": "https://api.hh.ru/vacancies/117161804?host=hh.ru",
+        "employer": "ВижнЛабс (VisionLabs)",
+        "experience": "От 3 до 6 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117147445",
+        "name": "Тестировщик ПО",
+        "salary": null,
+        "area": "Москва",
+        "published_at": "2025-02-12T14:01:38+0300",
+        "url": "https://api.hh.ru/vacancies/117147445?host=hh.ru",
+        "employer": "СберСпасибо",
+        "experience": "От 3 до 6 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117027217",
+        "name": "Аналитик данных",
+        "salary": {
+            "from": 200000,
+            "to": 200000,
+            "currency": "RUR",
+            "gross": true
+        },
+        "area": "Москва",
+        "published_at": "2025-02-10T12:13:02+0300",
+        "url": "https://api.hh.ru/vacancies/117027217?host=hh.ru",
+        "employer": "Азбука вкуса",
+        "experience": "От 1 года до 3 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117112115",
+        "name": "Frontend-разработчик Vue.js",
+        "salary": null,
+        "area": "Москва",
+        "published_at": "2025-02-11T18:35:16+0300",
+        "url": "https://api.hh.ru/vacancies/117112115?host=hh.ru",
+        "employer": "Березка",
+        "experience": "От 3 до 6 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "116873691",
+        "name": "Java-разработчик",
+        "salary": null,
+        "area": "Москва",
+        "published_at": "2025-02-07T08:37:02+0300",
+        "url": "https://api.hh.ru/vacancies/116873691?host=hh.ru",
+        "employer": "ЭР-Телеком",
+        "experience": "От 1 года до 3 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117092943",
+        "name": "Специалист по тестированию",
+        "salary": {
+            "from": 100000,
+            "to": 180000,
+            "currency": "RUR",
+            "gross": true
+        },
+        "area": "Москва",
+        "published_at": "2025-02-11T13:05:54+0300",
+        "url": "https://api.hh.ru/vacancies/117092943?host=hh.ru",
+        "employer": "АВ Софт",
+        "experience": "От 1 года до 3 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117157813",
+        "name": "Младший аналитик",
+        "salary": null,
+        "area": "Москва",
+        "published_at": "2025-02-12T16:29:59+0300",
+        "url": "https://api.hh.ru/vacancies/117157813?host=hh.ru",
+        "employer": "MAGRAM MR",
+        "experience": "Нет опыта",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "115579081",
+        "name": "QA middle",
+        "salary": {
+            "from": 150000,
+            "to": null,
+            "currency": "RUR",
+            "gross": false
+        },
+        "area": "Москва",
+        "published_at": "2025-01-15T09:05:46+0300",
+        "url": "https://api.hh.ru/vacancies/115579081?host=hh.ru",
+        "employer": "Цифровые привычки",
+        "experience": "От 3 до 6 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117075770",
+        "name": "Аналитик данных (Junior)",
+        "salary": {
+            "from": 110000,
+            "to": null,
+            "currency": "RUR",
+            "gross": true
+        },
+        "area": "Москва",
+        "published_at": "2025-02-11T09:39:54+0300",
+        "url": "https://api.hh.ru/vacancies/117075770?host=hh.ru",
+        "employer": "РТ-Техприемка",
+        "experience": "Нет опыта",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117138038",
+        "name": "Стажёр",
+        "salary": {
+            "from": null,
+            "to": 80000,
+            "currency": "RUR",
+            "gross": true
+        },
+        "area": "Москва",
+        "published_at": "2025-02-12T11:51:15+0300",
+        "url": "https://api.hh.ru/vacancies/117138038?host=hh.ru",
+        "employer": "ЕВРАЗ",
+        "experience": "Нет опыта",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117014207",
+        "name": "Бизнес-аналитик",
+        "salary": null,
+        "area": "Москва",
+        "published_at": "2025-02-10T09:50:01+0300",
+        "url": "https://api.hh.ru/vacancies/117014207?host=hh.ru",
+        "employer": "Т-Банк",
+        "experience": "Нет опыта",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117181265",
+        "name": "QA Engineer (middle)",
+        "salary": {
+            "from": 130000,
+            "to": 180000,
+            "currency": "RUR",
+            "gross": false
+        },
+        "area": "Москва",
+        "published_at": "2025-02-13T08:18:35+0300",
+        "url": "https://api.hh.ru/vacancies/117181265?host=hh.ru",
+        "employer": "Клируэй Текнолоджис",
+        "experience": "От 3 до 6 лет",
+        "schedule": "Удаленная работа"
+    },
+    {
+        "id": "117089871",
+        "name": "Аналитик (Геология)",
+        "salary": null,
+        "area": "Москва",
+        "published_at": "2025-02-11T12:18:16+0300",
+        "url": "https://api.hh.ru/vacancies/117089871?host=hh.ru",
+        "employer": "VYGON Consulting",
+        "experience": "От 1 года до 3 лет",
+        "schedule": "Полный день"
+    },
+    {
+        "id": "117047994",
+        "name": "Аналитик данных",
+        "salary": {
+            "from": 250000,
+            "to": 400000,
+            "currency": "RUR",
+            "gross": false
+        },
+        "area": "Москва",
+        "published_at": "2025-02-10T17:08:13+0300",
+        "url": "https://api.hh.ru/vacancies/117047994?host=hh.ru",
+        "employer": "AYA GAMES",
+        "experience": "От 1 года до 3 лет",
+        "schedule": "Полный день"
+    }
+]
