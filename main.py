@@ -17,8 +17,10 @@ def main():
     else:
         vacancies_data = api.get_vacancies(search_text)
 
-    # Преобразуем словари в объекты Vacancy
-    vacancies = [Vacancy.from_api_response(data) for data in vacancies_data]
+    vacancies = [
+        Vacancy.from_api_response(data) if isinstance(data, dict) else data
+        for data in vacancies_data
+    ]
 
     logging.info(f"Получено {len(vacancies)} вакансий")
 
