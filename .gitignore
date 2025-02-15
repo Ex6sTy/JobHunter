@@ -1,0 +1,39 @@
+# Python specific
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment directories
+venv/
+.venv/
+env/
+.env/
+
+# pytest and testing related
+.pytest_cache/
+.tox/
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+
+# MyPy cache
+.mypy_cache/
+
+# Packaging
+*.wheel
+*.manifest
+
+# IDE and editor specific
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Poetry files
+poetry.lock

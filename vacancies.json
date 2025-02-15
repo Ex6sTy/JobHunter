@@ -1,0 +1,18 @@
+[
+    {
+        "id": "116792570",
+        "name": "Junior Developer (стажер)",
+        "salary": {
+            "from": 100000,
+            "to": null,
+            "currency": "RUR",
+            "gross": false
+        },
+        "area": "Москва",
+        "published_at": "2025-02-05T11:44:48+0300",
+        "url": "https://api.hh.ru/vacancies/116792570?host=hh.ru",
+        "employer": "NEXTLINE Лаборатория рекламы",
+        "experience": "Нет опыта",
+        "schedule": "Гибкий график"
+    }
+]
